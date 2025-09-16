@@ -1,3 +1,4 @@
+
 # SmartAd Insights - Backend API
 
 🤖 AI-Powered Campaign Optimization Platform Backend
@@ -14,3 +15,5 @@
 
 ## Quick Start
 
+=======
+# smartad-backend-
