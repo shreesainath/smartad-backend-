@@ -1,0 +1,141 @@
+# Dependabot configuration for Flask SmartAd Backend
+# Automatically manages Python dependencies for security and updates
+
+version: 2
+updates:
+  # Python/Flask Dependencies
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    target-branch: "main"
+    open-pull-requests-limit: 8
+    
+    # Group related Flask/Python packages
+    groups:
+      flask-ecosystem:
+        patterns:
+          - "flask*"
+          - "Flask*"
+          - "werkzeug"
+          - "jinja2"
+          - "itsdangerous"
+          - "click"
+        
+      security-auth:
+        patterns:
+          - "flask-jwt-extended"
+          - "flask-cors"
+          - "cryptography"
+          - "bcrypt"
+          - "pyjwt"
+          - "authlib"
+        
+      database-orm:
+        patterns:
+          - "sqlalchemy"
+          - "flask-sqlalchemy" 
+          - "alembic"
+          - "psycopg2*"
+          - "pymongo"
+        
+      ml-data-science:
+        patterns:
+          - "scikit-learn"
+          - "pandas"
+          - "numpy"
+          - "joblib"
+          - "scipy"
+          - "matplotlib"
+          - "seaborn"
+        
+      api-validation:
+        patterns:
+          - "marshmallow"
+          - "flask-marshmallow"
+          - "cerberus"
+          - "jsonschema"
+          - "pydantic"
+        
+      testing-dev:
+        patterns:
+          - "pytest*"
+          - "flask-testing"
+          - "coverage"
+          - "black"
+          - "flake8"
+          - "mypy"
+    
+    # Ignore packages that might cause breaking changes
+    ignore:
+      - dependency-name: "python"
+        versions: ["< 3.9"]
+      - dependency-name: "flask"
+        update-types: ["version-update:semver-major"]
+        
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    
+    reviewers:
+      - "shreesainath"
+    
+    assignees:
+      - "shreesainath"
+    
+    labels:
+      - "dependencies"
+      - "backend"
+      - "python"
+      - "flask"
+      - "automated"
+      - "security"
+
+  # Docker Dependencies (if you have Dockerfile)
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      day: "tuesday"
+      time: "10:00"
+      timezone: "Asia/Kolkata"
+    target-branch: "main"
+    open-pull-requests-limit: 2
+    
+    commit-message:
+      prefix: "docker"
+      include: "scope"
+    
+    reviewers:
+      - "shreesainath"
+    
+    labels:
+      - "docker"
+      - "infrastructure"
+      - "automated"
+
+  # GitHub Actions (if you have CI/CD workflows)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      day: "wednesday"
+      time: "10:00"
+      timezone: "Asia/Kolkata"
+    target-branch: "main"
+    open-pull-requests-limit: 2
+    
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    
+    reviewers:
+      - "shreesainath"
+    
+    labels:
+      - "github-actions"
+      - "ci-cd"
+      - "automated"
