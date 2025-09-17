@@ -44,6 +44,28 @@ def create_app():
     def health():
         return {'status': 'healthy', 'message': 'SmartAd Backend Running'}
     
+    # Add AI model health check endpoint
+    @app.route('/api/campaign/health')
+    def ai_health():
+        try:
+            from app.services.ai_service import ai_service
+            return {
+                'success': True,
+                'message': 'Campaign AI service is running',
+                'model_status': 'loaded' if ai_service.model.is_trained else 'not_loaded',
+                'available_endpoints': [
+                    '/api/campaign/recommendations',
+                    '/api/platforms',
+                    '/api/campaign/health'
+                ]
+            }
+        except Exception as e:
+            return {
+                'success': False,
+                'error': str(e),
+                'model_status': 'error'
+            }, 500
+    
     @app.errorhandler(404)
     def not_found(error):
         return {'error': 'Endpoint not found'}, 404

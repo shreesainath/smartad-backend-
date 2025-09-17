@@ -1,0 +1,20 @@
+product_name,budget,location,age_group,interests,objectives,recommended_platform,platform_score,budget_allocation_facebook,budget_allocation_google,budget_allocation_instagram,budget_allocation_linkedin,budget_allocation_twitter,ctr_prediction,conversion_prediction,confidence_score
+IT Services,2500,Thiruvallur,25-34,technology;software;programming,leads,LinkedIn,0.91,0.15,0.35,0.10,0.35,0.05,0.047,0.128,0.89
+Automobile Parts,4000,Thiruvallur,35-44,automobile;manufacturing;engineering,awareness,Facebook,0.86,0.40,0.30,0.20,0.05,0.05,0.038,0.095,0.84
+Chemical Manufacturing,3500,Thiruvallur,25-34,chemical;industrial;manufacturing,leads,LinkedIn,0.90,0.20,0.30,0.15,0.30,0.05,0.045,0.115,0.88
+Petrochemical Services,5000,Thiruvallur,35-44,petrochemical;refinery;industrial,conversions,Google,0.88,0.20,0.45,0.25,0.08,0.02,0.042,0.108,0.86
+Leather Products,1800,Ranipet,25-34,leather;manufacturing;export,traffic,Instagram,0.85,0.25,0.25,0.40,0.05,0.05,0.036,0.088,0.83
+Engineering Works,2200,Ranipet,35-44,engineering;mechanical;industrial,leads,LinkedIn,0.89,0.15,0.35,0.10,0.35,0.05,0.044,0.118,0.87
+Medical Equipment,2800,Vellore,35-44,medical;healthcare;equipment,leads,LinkedIn,0.92,0.10,0.40,0.15,0.30,0.05,0.048,0.132,0.90
+Textile Manufacturing,1500,Vellore,25-34,textile;garment;manufacturing,conversions,Instagram,0.87,0.25,0.25,0.35,0.10,0.05,0.040,0.098,0.85
+Silk Production,1000,Tirupathur,25-34,silk;textile;handloom,traffic,Instagram,0.86,0.30,0.25,0.35,0.05,0.05,0.037,0.092,0.84
+Mango Processing,1800,Krishnagiri,25-34,food;processing;agriculture,awareness,Facebook,0.85,0.40,0.30,0.25,0.03,0.02,0.036,0.089,0.83
+Steel Manufacturing,4500,Dharmapuri,35-44,steel;manufacturing;industrial,leads,LinkedIn,0.90,0.15,0.40,0.10,0.30,0.05,0.046,0.125,0.88
+Steel Products,5500,Salem,35-44,steel;manufacturing;heavy industry,leads,LinkedIn,0.93,0.10,0.45,0.05,0.35,0.05,0.049,0.138,0.91
+Poultry Farming,2200,Namakkal,25-34,poultry;farming;agriculture,awareness,Facebook,0.84,0.40,0.30,0.25,0.03,0.02,0.035,0.085,0.82
+Silk Weaving,1500,Kancheepuram,25-34,silk;weaving;traditional,traffic,Instagram,0.87,0.25,0.20,0.40,0.10,0.05,0.040,0.100,0.85
+Electronics Manufacturing,3500,Chengalpattu,25-34,electronics;manufacturing;technology,leads,LinkedIn,0.90,0.15,0.40,0.10,0.30,0.05,0.045,0.122,0.88
+Software Development,8000,Chennai,25-34,software;IT;technology,leads,LinkedIn,0.94,0.05,0.45,0.05,0.40,0.05,0.051,0.148,0.92
+Textile Powerlooms,2800,Erode,25-34,textile;powerloom;cloth,awareness,Facebook,0.85,0.35,0.30,0.30,0.03,0.02,0.037,0.090,0.83
+Textile Machinery,4500,Coimbatore,35-44,machinery;textile;manufacturing,leads,LinkedIn,0.91,0.15,0.40,0.10,0.30,0.05,0.046,0.125,0.89
+Garment Export,3500,Tiruppur,25-34,garment;export;apparel,traffic,Instagram,0.88,0.20,0.25,0.40,0.10,0.05,0.042,0.108,0.86
